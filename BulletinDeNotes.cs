@@ -12,7 +12,7 @@ public class BulletinDeNotes
         while (true)
         {
             Console.WriteLine("Saisir une note");
-            string choix = Console.ReadLine();
+            string? choix = Console.ReadLine();
 
             if (choix == "fin")
             {

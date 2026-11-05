@@ -10,10 +10,12 @@ class Program
         Console.WriteLine("3 - FizzBuzz");
         Console.WriteLine("4 - Convertisseur d’unités");
         Console.WriteLine("5 - Bulletin de notes");
+        Console.WriteLine("6 - Le carnet de contacts");
+        Console.WriteLine("7 - Salle de cinema");
 
         Console.WriteLine("Choix: ");
 
-        string choix = Console.ReadLine();
+        string? choix = Console.ReadLine();
 
         switch (choix)
         {
@@ -31,6 +33,12 @@ class Program
                 break;
             case "5":
                 BulletinDeNotes.Esegui();
+                break;
+            case "6":
+                CarnetDeContacts.Esegui();
+                break;
+            case "7":
+                SalleDeCinema.Esegui();
                 break;
             default:
                 Console.WriteLine("Le choix n'est pas valide.");

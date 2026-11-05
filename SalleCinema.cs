@@ -1,0 +1,89 @@
+public class SalleDeCinema
+{
+    static bool[,] places = new bool[5, 8];
+
+    public static void Esegui()
+    {   
+        while (true)
+        {
+        Console.WriteLine("Que veux-tu faire ?");
+        Console.WriteLine("1 - Afficher");
+        Console.WriteLine("2 - Reserver");
+        Console.WriteLine("3 - Annuler");
+        Console.WriteLine("4 - Statistiques");
+        Console.WriteLine("5 - Quitter");
+
+        Console.WriteLine("Choix: ");
+
+        string? choix = Console.ReadLine();
+        
+            switch (choix)
+            {
+                case "1":
+                    Afficher();
+                    break;
+                case "2":
+                    Reserver();
+                    break;
+                case "3":
+                    Annuler();
+                    break;
+                case "4":
+                    Statistiques();
+                    break;
+                case "5":
+                    return;
+                default:
+                    Console.WriteLine("Le choix n'est pas valide.");
+                    break;
+            }
+        }
+    }
+
+        static void Afficher()
+        {
+            Console.WriteLine("    1 2 3 4 5 6 7 8");
+            for (int r = 0; r < places.GetLength(0); r++)
+            {
+                char lettre = (char)('A' + r);
+                Console.Write($"{lettre}   ");
+                for (int s = 0; s < places.GetLength(1); s++)
+                {
+                    if (places[r, s] == true)
+                    {
+                        Console.Write("X ");
+                    }
+                    else
+                    {
+                        Console.Write(". ");
+                    }
+                }
+                Console.WriteLine();
+            }
+        }
+
+        static void Reserver()
+        {
+            Console.WriteLine("A faire");
+        }
+
+        static void Annuler()
+        {
+            Console.WriteLine("A faire");
+        }
+
+        static void Statistiques()
+        {
+            Console.WriteLine("A faire");
+        }
+
+        static bool LirePlace(out int r, out int s)
+        {
+            r = 0;
+            s = 0;
+            string saisie = (Console.ReadLine() ?? "").Trim().ToUpper();
+            // qui i controlli: return false se qualcosa non va
+            return true;
+            
+        }
+    }
