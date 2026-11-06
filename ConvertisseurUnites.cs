@@ -16,7 +16,7 @@ public class ConvertisseurDUnités
 
         Console.WriteLine("Choix: ");
 
-        string choix = Console.ReadLine();
+        string? choix = Console.ReadLine();
 
         int num = 0;
         string result = "";
@@ -50,13 +50,13 @@ public class ConvertisseurDUnités
             Console.WriteLine("2 - F° to C°");
 
             Console.WriteLine("Choix: ");
-            string choix = Console.ReadLine();
+            string? choix = Console.ReadLine();
 
 
             int Fahrenheit;
             int Celsius;
             Console.WriteLine("Choisir une temperature");
-            string rep1 = Console.ReadLine(), res = "Erreur";
+            string? rep1 = Console.ReadLine(), res = "Erreur";
             bool succes1 = int.TryParse(rep1, out num);
 
             if (choix == "1")
@@ -80,12 +80,12 @@ public class ConvertisseurDUnités
             Console.WriteLine("2 - Miles to Km");
 
             Console.WriteLine("Choix: ");
-            string choix = Console.ReadLine();
+            string? choix = Console.ReadLine();
 
             double Km;
             double Miles;
             Console.WriteLine("Choisir une longeur");
-            string rep1 = Console.ReadLine(), res = "Erreur";
+            string? rep1 = Console.ReadLine(), res = "Erreur";
             bool succes1 = double.TryParse(rep1, out num);
 
             if (choix == "1")
@@ -109,12 +109,12 @@ public class ConvertisseurDUnités
             Console.WriteLine("2 - Livre to Kg");
 
             Console.WriteLine("Choix: ");
-            string choix = Console.ReadLine();
+            string? choix = Console.ReadLine();
 
             double Kg;
             double Livres;
-            Console.WriteLine("Choisir une longeur");
-            string rep1 = Console.ReadLine(), res = "Erreur";
+            Console.WriteLine("Choisir un poids");
+            string? rep1 = Console.ReadLine(), res = "Erreur";
             bool succes1 = double.TryParse(rep1, out num);
 
             if (choix == "1")

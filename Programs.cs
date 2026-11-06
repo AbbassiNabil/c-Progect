@@ -12,6 +12,8 @@ class Program
         Console.WriteLine("5 - Bulletin de notes");
         Console.WriteLine("6 - Le carnet de contacts");
         Console.WriteLine("7 - Salle de cinema");
+        Console.WriteLine("8 - Morpion");
+        Console.WriteLine("9 - Quitter");
 
         Console.WriteLine("Choix: ");
 
@@ -40,6 +42,11 @@ class Program
             case "7":
                 SalleDeCinema.Esegui();
                 break;
+            case "8":
+                Morpion.Esegui();
+                break;
+            case "9":
+                return;
             default:
                 Console.WriteLine("Le choix n'est pas valide.");
                 break;
